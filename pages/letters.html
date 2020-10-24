@@ -8,6 +8,8 @@
 <script src="https://kit.fontawesome.com/d9d407af90.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Josefin+Slab:wght@600&family=Sacramento&display=swap" rel="stylesheet"> 
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <!--NavBar-->
@@ -28,52 +30,62 @@
   </div>
 </nav>
 
-<body>
+<body onLoad = 'lettersLoad()'>
 <div class="bk-2 header">
     <h2>Letters</h2>
-    <p>Zephyra and Davian’s hasty departure from Falsk left everyone involved with unsaid goodbyes and unspoken sentiments. Beginning just weeks after the exciting conclusion of Parallel, this series of letters, from Falsk to Raven’s Port and back, chronicles the continuing friendships--and, in some cases, enmity--between well-loved characters. Join Zephyra, Davian, the Ostodars, Skeigi, Drotan, and some new friends as well, as they continue their story through correspondence. </p>
+    <p>Zephyra and Davian&#39;ss hasty departure from Falsk left everyone involved with unsaid goodbyes and unspoken sentiments. Beginning just weeks after the exciting conclusion of Parallel, this series of letters, from Falsk to Raven&#39;ss Port and back, chronicles the continuing friendships&#8212and, in some cases, enmity&#8212between well-loved characters. Join Zephyra, Davian, the Ostodars, Skeigi, Drotan, and some new friends as well, as they continue their story through correspondence. </p>
 </div>
 </br>
 <container>
 <div class=" bk-1  charGrid" id="Aenna-cs">
-    <h3 class="characterh3"><a href='blank.html'>Aenna</a></h3>
-    <p class="characterboxp">Total</p>
+  <input class='archiveBtn' type='button' id='titleAenna' value='Aenna' onclick="">
+    <p id = 'aennaTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-3  charGrid" id="Niera-cs"> 
-    <h3><a href='blank.html'>Niera</a></h3>
-    <p class="characterboxp">1</p>
+  <input class='archiveBtn hold' type='button' id='titleNiera' value='Niera' onclick="">
+    <p id = 'nieraTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-light  charGrid" id="Raavi-cs">
-    <h3><a href='blank.html'>Raavi</a></h3>
-    <p class="characterboxp">Total</p>
+  <input class='archiveBtn' type='button' id='titleRaavi' value='Raavi' onclick="">
+    <p id = 'raaviTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-1  charGrid" id="Skeigi-cs">
-    <h3><a href='blank.html'>Skeigi</a></h3>
-    <p class="characterboxp">1</p>
+  <input type='button' class='archiveBtn hold' id='titleSkeigi' value='Skeigi' onclick="">
+    <p id = 'skeigiTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-3  charGrid" id="Sura-cs">
-    <h3><a href='blank.html'>Sura</a></h3>
-    <p class="characterboxp">Total</p>
+  <input class='archiveBtn' type='button' id='titleSura' value='Sura' onclick="">
+    <p id = 'suraTotal' class = 'characterboxp'></p>
 </div>
-<div class=" bk-light  charGrid" id="Torin-cs">
-    <h3><a href='blank.html'>Torin</a></h3>
-    <p class="characterboxp">Total</p>
+<div class=" bk-light  charGrid" id="Davian-cs">
+  <input class='archiveBtn' type='button' id='titleDavian' value='Davian' onclick="">
+    <p id = 'davianTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-1  charGrid" id="Zephyra-cs">
-    <h3><a href='blank.html'>Zephyra</a></h3>
-    <p class="characterboxp">2</p>
+  <input type='button' class='archiveBtn' id='titleZephyra' value='Zephyra' onclick="">
+    <p id = 'zephyraTotal' class = 'characterboxp'></p>
 </div>
 <div class=" bk-3  charGrid" id="other-cs">
-    <h3><a href='blank.html'>Other</a></h3>
-    <p class="characterboxp">Total</p>
+  <input class='archiveBtn' type='button' id='titleOther' value='Other' onclick="">
+    <p id = 'otherTotal' class = 'characterboxp'></p>
 </div>
 </container>
-<div id="letterListCont" class="col-light bk-2">
-  <h3>Letters by ID</h3>
-  <ul id="letterList">
-    <li><a href='Ind-Letters/NiZe1.html'>Ni-Ze-1</a></li>
-    <li><a href='Ind-Letters/ZeSk1.html'>Ze-Sk-1</a></li>
-  </ul>
+
+<div id='allLists'>
+<div id='aennaArchive' class='bk-1 clist'><img src='../assets/sig/aenna_sig.svg' height='75px' width='auto'><ul id='aennnaArchive' class = 'clist'></ul></div>
+<div id='nieraArchive' class='bk-3 clist'><img src='../assets/sig/niera_sig.svg' height='60px' display='block'><ul id='nieraArchive' class = 'clist'></ul></div>
+<div id='raaviArchive' class='bk-light clist'><h2>Raavi</h2><ul id='raaviArchive' class = 'clist'></ul></div>
+<div id='skeigiArchive' class='bk-1 clist'><img src='../assets/sig/skeigi_sig.svg' height='60px'><ul id='skeigiArchive' class = 'clist'></ul></div>
+<div id='suraArchive' class='bk-3 clist'><img src='../assets/sig/sura_sig.svg' height='60px'><ul id='suraArchive' class = 'clist'></ul></div>
+<div id='davianArchive' class='bk-light clist'><h2>Davian</h2><ul id='davianArchive' class = 'clist'></ul></div>
+<div id='zephyraArchive' class='bk-1 clist'><h2>Zephyra</h2><ul id='zephyraArchive' class = 'clist'></ul></div>
+<div id='otherArchive' class='bk-3 clist'><h2>Other</h2><ul id='otherArchive' class = 'clist'></ul></div>
+</div>
+
+<div id="flip" class='bk-2'><h3 id = 'letterdrop'>Letters by ID</h3></div>
+<div id="panel" class='bk-2'>
+  <ul id='IDList'></ul>
+</div>
 
 </div>
 
@@ -82,10 +94,45 @@
 <footer>
 <div class="bk-darker col-dark padding-small">
   <p><a href="https://github.com/mintyfreshfish/author-website">github link</a></p>
+  <a target="_blank" href="https://www.brusheezy.com">Photoshop brushes by Brusheezy.com</a>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script text="type/javascript" src="../script/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#allLists").slideUp()
+      $("#panel").slideToggle("slow");
+    });
+  });
+
+  $(document).ready(function(){
+    $("#titleAenna").click(function(){
+      $("#aennaArchive").slideToggle("slow");
+    });
+    $("#titleNiera").click(function(){
+      $("#nieraArchive").slideToggle("slow");
+    });
+    $("#titleRaavi").click(function(){
+      $("#raaviArchive").slideToggle("slow");
+    });
+    $("#titleSkeigi").click(function(){
+      $("#skeigiArchive").slideToggle("slow");
+    });
+    $("#titleSura").click(function(){
+      $("#suraArchive").slideToggle("slow");
+    });
+    $("#titleDavian").click(function(){
+      $("#davianArchive").slideToggle("slow");
+    });
+    $("#titleZephyra").click(function(){
+      $("#zephyraArchive").slideToggle("slow");
+    });
+    $("#titleOther").click(function(){
+      $("#otherArchive").slideToggle("slow");
+    });
+  });
+  </script>
 </footer>
 </html>
