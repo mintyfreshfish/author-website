@@ -6,6 +6,7 @@
 <script src="https://kit.fontawesome.com/d9d407af90.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Josefin+Slab:wght@600&family=Sacramento&display=swap" rel="stylesheet"> 
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+<script text="type/javascript" src="../script/airtable.js"></script>
 </head>
 
 <!--NavBar-->
@@ -31,6 +32,31 @@
     <img src="../assets/cute_cloud.svg" style="width:80%; margin-left:auto; margin-right:auto; display:block; margin-bottom: 20px;" alt="cloud">
     <p class="centered">This is a placeholder page to sub in for all the links I didn't want to make yet</p>
 </div>
+
+<script>
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: 'keyXJke62dzKOSuwk'}).base('appzLKHrRHJbsHoSW');
+
+base('Table 1').select({
+    // Selecting the first 3 records in Grid view:
+    view: "Grid view"
+}).eachPage(function page(records, fetchNextPage) {
+    // This function (`page`) will get called for each page of records.
+
+    records.forEach(function(record) {
+        console.log('Retrieved', record);
+    });
+
+    // To fetch the next page of records, call `fetchNextPage`.
+    // If there are more records, `page` will get called again.
+    // If there are no more records, `done` will get called.
+    fetchNextPage();
+
+}, function done(err) {
+    if (err) { console.error(err); return; }
+});
+
+</script>
 </body>
 
 <footer>
@@ -41,5 +67,10 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script text="type/javascript" src="../script/app.js"></script>
+
+<script text="type/javascript" src="../script/script.js"></script>
+
+
 </footer>
 </html>

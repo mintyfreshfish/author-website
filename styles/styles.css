@@ -1,9 +1,12 @@
+
+
 /*
 Palettes: C9C2A0  D2DABD  A09C86  43362B  20242E
 
 493636  806756  C5AC8D  A79388  964145 1C1718  F0EAD6
 */
-
+/*ANCHOR Colors */
+/* //region [rgba(119, 15, 135, 0.2)] */
 .bk-darker {
     background-color: #070617;
 }
@@ -25,43 +28,7 @@ Palettes: C9C2A0  D2DABD  A09C86  43362B  20242E
 }
 
 .bk-light {
-    background-color: rgb(197, 171, 140);
-}
-
-.bk-pap-1 {
-    background-image: url('../assets/paper/paper1.png');
-}
-
-.bk-pap-2 {
-    background-image: url('../assets/paper/paper2.png');
-}
-
-.bk-pap-3 {
-    background-image: url('../assets/paper/paper3.png')
-}
-
-.bk-pap-4 {
-    background-image: url('../assets/paper/paper4.png')
-}
-
-.bk-pap-5 {
-    background-image: url('../assets/paper/paper6.png')
-}
-
-.bk-pap-6 {
-    background-image: url('../assets/paper/paper7.png')
-}
-
-.bk-pap-7 {
-    background-image: url('../assets/paper/paper8.png')
-}
-
-.bk-pap-8 {
-    background-image: url('../assets/paper/paper9.png')
-}
-
-.bk-pap-9 {
-    background-image: url('../assets/paper/paper11.png')
+    background-color: #c5ab8c;
 }
 
 .col-light {
@@ -71,7 +38,7 @@ Palettes: C9C2A0  D2DABD  A09C86  43362B  20242E
 .col-dark {
     color: #806756;
 }
-
+/* //end region */
 .padding-med {
     padding: 10%;
 }
@@ -100,6 +67,8 @@ Palettes: C9C2A0  D2DABD  A09C86  43362B  20242E
     text-align: center;
 }
 
+/*ANCHOR Mains */
+/* //region [rgba(119, 15, 135, 0.2)] */
 h1,
 h2,
 h3 {
@@ -207,6 +176,9 @@ footer p {
     padding-left: 5%;
     padding-right: 5%;
 }
+/* //end region */
+
+/* ANCHOR Segments */
 
 .fa-chevron-down {
     color: #F0EAD6;
@@ -247,80 +219,6 @@ footer p {
     color: #F0EAD6;
 }
 
-.niHand p {
-    font-family: 'Charmonman', cursive;
-    font-size: 25px;
-    line-height: 200%;
-    font-weight: normal;
-}
-
-.zeHand p {
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.aeHand p {
-    font-family: 'Parisienne', cursive;
-    font-size: 24px;
-    line-height: 200%;
-    font-weight: 500;
-}
-
-.suHand p {
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.toHand p {
-    font-family: 'Marck Script', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.vuHand p {
-    font-family: 'Tangerine', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.daHand p {
-    font-family: 'Yellowtail', cursive;
-    font-size: 24px;
-    line-height: 200%;
-}
-
-.raHand p {
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.skHand p {
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 20px;
-    line-height: 200%;
-}
-
-.idHand p {
-    font-family: 'Reenie Beanie', cursive;
-}
-
-
-.letterContents {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-#letterListCont {
-    padding: 40px;
-}
-
-.ps {
-    margin-bottom: 50px;
-}
-
 .map {
     position: relative;
     overflow: hidden;
@@ -328,16 +226,7 @@ footer p {
     padding: 20%;
   }
 
-  .clist {
-      color: #070617;
-      font-family: 'Josefin Slab', serif;
-      font-size: 30px;
-      padding: 20px;
-      list-style-type: none;
-  }
-
-  /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
+.responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -403,6 +292,142 @@ footer p {
     font-size: 24px;
 }
 
+/*ANCHOR LETTERS****************************************************************************************************************
+**************************************************************************************************************************************/
+/* //region [rgba(72, 204, 65, 0.1)] */
+/**Backgrounds**/
+.bk-pap-1 {
+    background-image: url('../assets/paper/paper1.png');
+}
+
+.bk-pap-2 {
+    background-image: url('../assets/paper/paper2.png');
+}
+
+.bk-pap-3 {
+    background-image: url('../assets/paper/paper3.png')
+}
+
+.bk-pap-4 {
+    background-image: url('../assets/paper/paper4.png')
+}
+
+.bk-pap-5 {
+    background-image: url('../assets/paper/paper6.png')
+}
+
+.bk-pap-6 {
+    background-image: url('../assets/paper/paper7.png')
+}
+
+.bk-pap-7 {
+    background-image: url('../assets/paper/paper8.png')
+}
+
+.bk-pap-8 {
+    background-image: url('../assets/paper/paper9.png')
+}
+
+.bk-pap-9 {
+    background-image: url('../assets/paper/paper11.png')
+}
+/* //end region */
+
+/*ANCHOR Handwriting**/
+/* //region [rgba(135, 107, 15, 0.2)] */
+.niHand p {
+    font-family: 'Charmonman', cursive;
+    font-size: 25px;
+    line-height: 200%;
+    font-weight: normal;
+}
+
+.zeHand p {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.aeHand p {
+    font-family: 'Parisienne', cursive;
+    font-size: 24px;
+    line-height: 200%;
+    font-weight: 500;
+}
+
+.suHand p {
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    line-height: 200%;
+}
+
+.toHand p {
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.vuHand p {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.daHand p {
+    font-family: 'Yellowtail', cursive;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+.raHand p {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.skHand p {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.idHand p {
+    font-family: 'Reenie Beanie', cursive;
+}
+/* //end region */
+/*ANCHOR Other*/
+/* //region [rgba(186, 50, 50, 0.1)] */
+.clist {
+      color: #070617;
+      font-family: 'Josefin Slab', serif;
+      font-size: 30px;
+      padding: 20px;
+      list-style-type: none;
+  }
+
+.letterContents {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.letterContents p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.letterDate {
+    text-align: right;
+    padding-top: 0px;
+}
+
+#letterListCont {
+    padding: 40px;
+}
+
+.ps {
+    margin-bottom: 50px;
+}
+
 .expand, #flip {
     color: black;
     padding: 22px;
@@ -413,9 +438,9 @@ footer p {
     padding: 50px;
     display: none;
   }
-
-/**ARCHIVE LISTS*****************************************************************************************************************************
-***********************************************************************************************************************/
+/* //end region */
+/*ANCHOR ARCHIVE LISTS******************************************************************************************************************************/
+/* //region [rgba(49, 59, 173, 0.2)] */
 #aennaArchive {
     padding: 50px;
     display: none;
@@ -448,11 +473,8 @@ footer p {
     padding: 50px;
     display: none;
 }
-
-	/*
-  	Flaticon icon font: Flaticon
-  	Creation date: 24/10/2020 13:46
-  	*/
+/* //end region */
+/**Flaticon icon font: Flaticon Creation date: 24/10/2020 13:46************************************************************/
 
       @font-face {
         font-family: "Flaticon";
@@ -484,7 +506,7 @@ footer p {
       .flaticon-right-arrow:before { content: "\f100"; }
       .flaticon-left-arrow:before { content: "\f101"; }
 
-/**RESPONSIVE**********************************************************************************************
+/*ANCHOR RESPONSIVE**********************************************************************************************
 ***********************************************************************************************************/
 @media only screen and (max-width: 640px) {
 
@@ -497,12 +519,6 @@ footer p {
         padding-top: 70px;
         padding-bottom: 50px;
         height: 400px;
-    }
-
-    .letterContents p {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 20px;
     }
 
     .flexFalsk p {
@@ -524,8 +540,18 @@ footer p {
     .row {
         margin-right: 0px;
     }
+
+/**Letters***********************************************************************************************************************************************/
+/* //region [rgba(72, 204, 65, 0.1)] */
+.letterContents p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+/* //end region */
 }
 
+/*ANCHOR Responsive Desktop*/
 @media only screen and (min-width: 641px) {
     body {
         padding-bottom: 3em;
@@ -618,15 +644,6 @@ footer p {
         margin-top: 10px;
     }
 
-    .charGrid {
-        width: 25%;
-    }
-
-    .letter {
-        margin-left: 10%;
-        margin-right:10%
-    }
-
     #mainHeader {
         margin-top: 50px;
         padding: 0px;
@@ -639,14 +656,23 @@ footer p {
         padding-bottom: 10%;
     }
 
-    #letterListCont {
-        margin-top: 30px;
-    }
-
     .map {
         margin-left: 10%;
         margin-right: 10%;
       }
     
+/**LETTERS******************************************************************************************************************/
+/* //region [rgba(72, 204, 65, 0.1)] */
+#letterListCont {
+    margin-top: 30px;
+}
+.charGrid {
+    width: 25%;
+}
 
+.letter {
+    margin-left: 10%;
+    margin-right:10%
+}
+/* //end region */
 }

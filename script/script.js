@@ -79,15 +79,15 @@ fetch(url)
 })
 
 /**LETTERS**/
-
+//ANCHOR Dictionary
 //Dictionary//
 const letdb = {
-    'aennnaArchive': ['Ind-Letters/AeDa1.html','Ind-Letters/DaAe1.html','Ind-Letters/AeDa2.html','Ind-Letters/DaAe2.html'],
-    'suraArchive': [],
-    'nieraArchive': ['Ind-Letters/NiZe1.html','Ind-Letters/ZeNi1.html'],
-    'davianArchive': ['Ind-Letters/AeDa1.html','Ind-Letters/DaAe1.html','Ind-Letters/DaAe1.html','Ind-Letters/DaAe2.html'],
-    'skeigiArchive': ['Ind-Letters/ZeSk1.html'],
-    'zephyraArchive': ['Ind-Letters/NiZe1.html', 'Ind-Letters/ZeSk1.html','Ind-Letters/ZeNi1.html'],
+    'aennnaArchive': ['Ind-Letters/AeDa4.html','Ind-Letters/AeDa3.html','Ind-Letters/DaAe3.html','Ind-Letters/AeDa1.html','Ind-Letters/DaAe1.html','Ind-Letters/AeDa2.html','Ind-Letters/DaAe2.html'],
+    'suraArchive': ['Ind-Letters/ZeSu2.html','Ind-Letters/ZeSu1.html','Ind-Letters/SuZe1.html'],
+    'nieraArchive': ['Ind-Letters/NiZe3.html','Ind-Letters/NiZe1.html','Ind-Letters/NiZe2.html','Ind-Letters/ZeNi1.html'],
+    'davianArchive': ['Ind-Letters/AeDa4.html','Ind-Letters/AeDa3.html','Ind-Letters/DaAe3.html','Ind-Letters/AeDa1.html','Ind-Letters/DaAe1.html','Ind-Letters/AeDa2.html','Ind-Letters/DaAe2.html'],
+    'skeigiArchive': ['Ind-Letters/ZeSk4.html','Ind-Letters/SkZe1.html','Ind-Letters/ZeSk3.html','Ind-Letters/ZeSk1.html', 'Ind-Letters/ZeSk2.html'],
+    'zephyraArchive': ['Ind-Letters/SkZe1.html','Ind-Letters/ZeSk3.html','Ind-Letters/ZeSk1.html','Ind-Letters/NiZe3.html','Ind-Letters/NiZe2.html','Ind-Letters/NiZe1.html', 'Ind-Letters/ZeSk4.html','Ind-Letters/ZeSk1.html','Ind-Letters/ZeNi1.html','Ind-Letters/ZeSu2.html','Ind-Letters/ZeSu1.html','Ind-Letters/SuZe1.html'],
     'raaviArchive': [],
     'otherArchive': []
 };
@@ -204,3 +204,6 @@ lettersLoad = () => {
 }
 
 //New Letters//
+
+
+

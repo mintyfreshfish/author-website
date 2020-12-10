@@ -1,0 +1,28 @@
+12 months in a year
+30 days in a month
+7 days in a week
+
+Year: 730
+
+Months:
+    Gormandur: January
+    Ylir: February
+    Morsugur: March
+    Torri: April
+    Goi: May
+    Einmanudur: June
+    Harpa: July
+    Skerpla: August
+    Solmanudur: September
+    Heyannir: October
+    Tvimanudur: November
+    Haustmanudur: December
+    
+Days:
+    Sunnudagr: Sunday
+    Manadagr: Monday
+    Tysdagr: Tuesday
+    Onsdagr: Wednesday
+    Torsdagr: Thursday
+    Frjadagr: Friday
+    Laugardagr: Saturday
